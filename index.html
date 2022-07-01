@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,400;1,300&family=Gentium+Book+Plus&display=swap');
+    </style>
+    <title>Kelvin Temperature Converter</title>
+</head>
+
+<body>
+    <section>
+        <h1>Race Day</h1>
+        <p>annual race is just around the corner! This year, we have a lot of participants. You have been hired to write
+            a program that will register runners for the race and give them instructions on race day.
+
+            Here’s how our registration works. There are adult runners (over 18 years of age) and youth runners (under
+            18 years of age). They can register early or late. Runners are assigned a race number and start time based
+            on their age and registration.
+
+            Race number:
+
+            Early adults receive a race number at or above 1000.
+            All others receive a number below 1000.
+            Start time:
+
+            Adult registrants run at 9:30 am or 11:00 am.
+            Early adults run at 9:30 am.
+            Late adults run at 11:00 am.
+            Youth registrants run at 12:30 pm (regardless of registration).
+            But we didn’t plan for runners that are exactly 18! We’ll handle that by the end of the project.
+        </p>
+
+        <h3>Know Race Time:</h3>
+        <input type="text" placeholder="Enter your name" id="name">
+        <h5>Enter your Age</h5>
+        <input type="number" maxlength="3" placeholder="Example '18' " id="age1">
+        <h5>Registered already?</h5>
+        <input type="text" maxlength="3" placeholder=" Type 'yes' or 'no'" id="yn"> <br><br>
+
+
+        <!-- <select name="yn" id="btn">
+            <option ></option>
+            <option  value="yes">Yes, Registered</option>
+            <option  value="no">No, Not Registered</option>
+        </select> <br><br>
+        <div id="rbtn">
+            <input type="radio" id="y1" value="yes" name="yn">
+            <label for="y1">Yes</label>
+            <input type="radio" id="n1" value="No" name="yn">
+            <label for="n1">No</label> <br><br>
+        </div> -->
+        <button onclick="time()">Check Time</button>
+        <h2 id="timing"></h2>
+
+    </section>
+</body>
+
+</html>
